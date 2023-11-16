@@ -22,7 +22,7 @@ class MenuItemsView(generics.ListCreateAPIView):
 
 
 class SingleMenuItemView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
-    # queryset = MenuItem.objects.all()
+    queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
 
 
